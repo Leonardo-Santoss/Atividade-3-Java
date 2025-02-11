@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.circulo;
+
+public class Circulo {
+    int raio;
+    double area, perimetro;
+    
+    public int getRaio(){
+        return raio;    
+    }
+    public void setRaio(int raio){
+        this.raio =raio;    
+    
+    }
+    
+    public void CalculoArea(){
+        area =  Math.PI*(raio * raio);
+        
+    }
+    
+    public void CalculoPerimetro(){
+        perimetro =  (2 * Math.PI * raio);
+    }
+    
+    
+    
+    public static void main(String[] args) {
+        
+        Circulo circulo = new Circulo();
+        circulo.setRaio(12);
+        circulo.CalculoArea();
+        circulo.CalculoPerimetro();
+        System.out.println("A area de um ciculo é: " + circulo.area);
+        System.out.println("o perimetro de um ciculo é: " + circulo.perimetro);
+        
+    }
+}
