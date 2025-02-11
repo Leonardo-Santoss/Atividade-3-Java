@@ -1,0 +1,16 @@
+
+package com.mycompany.cilindro;
+
+public class Cilindro {
+    double raio = 12, altura = 17;
+    
+    public double CalaculoVolume(){
+    
+    return (Math.PI *(raio * raio) * altura);
+}
+   
+    public static void main(String[] args) {
+        Cilindro cilindro = new Cilindro();
+        System.out.println(cilindro.CalaculoVolume());
+    }
+}
