@@ -1,0 +1,31 @@
+
+package com.mycompany.contabancaria;
+
+
+public class ContaBancaria {
+    double saldo = 0, entrada;
+
+    public double Depositar(){
+        return saldo = (saldo + 500);
+    }
+    public double Sacar(){
+        return saldo = (saldo - 300);
+    }
+    
+    public double getSaldo(){
+        return (saldo + entrada);
+    }
+  
+    public static void main(String[] args) {
+        
+        ContaBancaria contabancaria = new ContaBancaria();
+        System.out.println("Saldo antes de depositar " + contabancaria.getSaldo());
+        contabancaria.Depositar();
+        
+        System.out.println("Saldo depois de depositar " + contabancaria.getSaldo());
+        contabancaria.Sacar();
+        
+        System.out.println("Saldo depois de sacar " + contabancaria.getSaldo());
+   
+    }
+    }
