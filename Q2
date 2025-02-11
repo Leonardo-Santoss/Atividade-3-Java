@@ -1,0 +1,18 @@
+
+package com.mycompany.triangulo;
+
+public class Triangulo {
+    
+    public int base = 23, altura = 30;
+    
+    
+    public int CalculoArea(){
+        return ((base * altura) / 2);
+    }
+
+    public static void main(String[] args) {
+        
+        Triangulo triangulo = new Triangulo();
+        System.out.println(triangulo.CalculoArea());
+    }
+}
