@@ -1,0 +1,30 @@
+package com.mycompany.carro;
+
+public class Carro {
+   String modelo;
+   int ano;
+   
+    public int getAno(){
+        return ano;
+    }
+     public String getModelo(){
+        return modelo;
+    }
+     
+    public void setModelo(String modelo){
+        this.ano = ano;
+    }
+     public void setAno(int ano){
+        this.modelo = modelo;
+    }
+   
+    public static void main(String[] args) {
+     Carro carro = new Carro();  
+     carro.modelo = "celta";
+     carro.ano = 2006;
+     
+    System.out.println("O modelo do carro e: " + carro.modelo);
+    System.out.println("O modelo do ano e: " + carro.ano);
+    }
+   
+}
