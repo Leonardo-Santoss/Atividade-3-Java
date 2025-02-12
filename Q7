@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.funcionarios;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Funcionarios {
+    
+String nome;
+double salario = 1500;
+
+public double aumentosalarial(){
+    return salario = (salario + 120);
+}
+
+    public static void main(String[] args) {
+        
+        Funcionarios funcionario = new Funcionarios();
+        funcionario.nome = "Rogerio";
+        System.out.println("Salario de " + funcionario.nome + " antes do aumento" + funcionario.salario);
+        funcionario.aumentosalarial();
+        System.out.println("Salario de " + funcionario.nome + " depois do aumento" + funcionario.salario);
+    }
+}
