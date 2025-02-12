@@ -1,0 +1,17 @@
+
+package com.mycompany.testeclass;
+
+public class TesteClass {
+    String nome;
+    double preço = 100;
+    
+    public double desconto(){
+        return (preço - (preço * 10)/100 )  ;
+    }    
+    public static void main(String[] args) {
+        TesteClass testeclass = new TesteClass();
+        
+        System.out.println("O valor do produto e: " + testeclass.preço);
+        System.out.print("valor depois do desconto de 10%: " + testeclass.desconto());
+    }
+}
