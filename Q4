@@ -13,7 +13,7 @@ public class ContaBancaria {
     }
     
     public double getSaldo(){
-        return (saldo + entrada);
+        return saldo;
     }
   
     public static void main(String[] args) {
