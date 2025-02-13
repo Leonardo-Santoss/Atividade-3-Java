@@ -10,7 +10,7 @@ package com.mycompany.livro;
  */
 public class Livro {
 
-    String titulo = "Java para programar."  , autor = "Poul";
+    String titulo = "Java."  , autor = "Poul";
     
     public String getAutor(){
     return autor;
