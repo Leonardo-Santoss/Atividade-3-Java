@@ -3,15 +3,25 @@ package com.mycompany.testeclass;
 
 public class TesteClass {
     String nome;
-    double preço = 100;
+    double preço = 10;
     
+    
+    public void setNome(String nome){
+        this.nome=nome;
+    }
+    
+    public String getNome(){
+        return nome;
+    }
     public double desconto(){
         return (preço - (preço * 10)/100 )  ;
     }    
     public static void main(String[] args) {
         TesteClass testeclass = new TesteClass();
+        testeclass.setNome("Milho");
         
-        System.out.println("O valor do produto e: " + testeclass.preço);
+        
+        System.out.println("O valor do "+ testeclass.getNome() +" e: " + testeclass.preço);
         System.out.print("valor depois do desconto de 10%: " + testeclass.desconto());
     }
 }
